@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alidarkstone.github.io/evtr/sitemap.xml

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EVTR: Togg T10X ve T10F Sorun Çözüm Rehberi</title>
+<meta name="description" content="Togg T10X ve T10F sahipleri için sorun çözüm rehberi. Sorununu yaz, adım adım çözümü gör.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <span class="brand"><span class="dot"></span>EVTR</span>
+  <div class="models" role="group" aria-label="Model">
+    <button class="chip active" data-model="all">Tümü</button>
+    <button class="chip" data-model="T10X">T10X</button>
+    <button class="chip" data-model="T10F">T10F</button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="hero">
+    <h1>Ne sorun yaşıyorsun?</h1>
+    <p class="sub">Togg T10X ve T10F için adım adım çözümler</p>
+    <div class="spotlight" id="spotlight">
+      <svg class="s-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false"
+        placeholder="Örn: şarj başlamıyor, ekran donuyor, anahtar algılanmıyor"
+        aria-label="Sorununu yaz" aria-controls="results">
+      <kbd class="hint">⌘K</kbd>
+    </div>
+    <div class="suggest" id="suggest"></div>
+  </section>
+
+  <section id="results" class="results" aria-live="polite"></section>
+<nav class="all" id="all" aria-label="Tüm sorunlar">
+  <h2>Tüm sorunlar</h2>
+  <ul>
+    <li><a href="sorun/ic-trim-sesi.html">Kabinde trim / tıkırtı sesi</a></li>
+    <li><a href="sorun/amortisor-sesi.html">Süspansiyon / amortisör gıcırtısı</a></li>
+    <li><a href="sorun/cam-motoru.html">Cam açılmıyor / cam motoru arızası</a></li>
+    <li><a href="sorun/kamera-arizasi.html">Kamera görüntüsü gelmiyor veya gecikiyor</a></li>
+    <li><a href="sorun/park-sensoru.html">Park sensörü / park asistanı çalışmıyor</a></li>
+    <li><a href="sorun/multimedya-yavas.html">Multimedya geç açılıyor / yavaş</a></li>
+    <li><a href="sorun/yuz-tanima.html">Yüz tanıma geç çalışıyor / tanımıyor</a></li>
+    <li><a href="sorun/ses-sistemi-donma.html">Meridian ses sistemi donuyor / radyo takılıyor</a></li>
+    <li><a href="sorun/ayarlar-sifirlaniyor.html">Ayarlar her açılışta sıfırlanıyor (dil, rejenerasyon)</a></li>
+    <li><a href="sorun/vites-n-gecti.html">Vites yanlışlıkla N&#x27;ye geçiyor</a></li>
+    <li><a href="sorun/arac-calismiyor-sira.html">Araç çalışmıyor / alarm çalıyor (başlatma sırası)</a></li>
+    <li><a href="sorun/kapi-montaj.html">Kapı sarkması / kapı ve döşeme montaj hatası</a></li>
+    <li><a href="sorun/sarj-baslamiyor.html">Şarj başlamıyor</a></li>
+    <li><a href="sorun/trugo-tak-sarj-et.html">Trugo&#x27;da Tak ve Şarj Et (AutoCharge) çalışmıyor</a></li>
+    <li><a href="sorun/sarj-kablosu-cikmiyor.html">Şarjı durdurma / kablo çıkmıyor</a></li>
+    <li><a href="sorun/ev-sarji.html">Evde şarj / duvar şarj cihazı</a></li>
+    <li><a href="sorun/ekran-karardi-dondu.html">Ekran karardı veya dondu</a></li>
+    <li><a href="sorun/ota-guncelleme-yuklenmiyor.html">Yazılım güncellemesi (OTA) yüklenmiyor</a></li>
+    <li><a href="sorun/internet-baglantisi-yok.html">Araçta internet / şebeke yok</a></li>
+    <li><a href="sorun/dijital-anahtar-calismiyor.html">Dijital anahtar (telefon) çalışmıyor</a></li>
+    <li><a href="sorun/dijital-anahtar-paylasma.html">Dijital anahtar oluşturma ve paylaşma</a></li>
+    <li><a href="sorun/bluetooth-telefon-baglanmiyor.html">Telefon Bluetooth ile bağlanmıyor</a></li>
+    <li><a href="sorun/trumore-acilmiyor.html">Trumore uygulaması açılmıyor</a></li>
+    <li><a href="sorun/trumore-arac-verisi-yok.html">Trumore&#x27;da araç görünmüyor / veriler güncellenmiyor</a></li>
+    <li><a href="sorun/12v-aku-bitti.html">12V akü bitti / araç tepki vermiyor</a></li>
+    <li><a href="sorun/park-halinde-sarj-dusuyor.html">Park halindeyken batarya azalıyor</a></li>
+    <li><a href="sorun/menzil-dusuk-gorunuyor.html">Gösterilen menzil beklenenden düşük</a></li>
+    <li><a href="sorun/kisin-menzil-dusuyor.html">Kışın menzil düşüyor</a></li>
+    <li><a href="sorun/lastik-basinc-uyarisi.html">Lastik basıncı uyarısı / 0 psi görünüyor</a></li>
+    <li><a href="sorun/lastik-patladi.html">Lastik patladı veya yarıldı</a></li>
+    <li><a href="sorun/direksiyon-titriyor.html">Yüksek hızda direksiyon titriyor / fren sesi</a></li>
+    <li><a href="sorun/sos-uyari-isigi.html">SOS / e-Call uyarı ışığı yanıyor</a></li>
+    <li><a href="sorun/klima-calismiyor.html">Klima / ısıtma çalışmıyor</a></li>
+    <li><a href="sorun/enerji-sistem-hatasi.html">Enerji sistem hatası / araç yolda kaldı</a></li>
+    <li><a href="sorun/adas-ozellikler.html">Sürüş destek (ADAS) özellikleri yok veya hata veriyor</a></li>
+    <li><a href="sorun/kapi-kilit.html">Kapılar erken kilitleniyor / kapı kolu geç açılıyor</a></li>
+    <li><a href="sorun/uyari-isigi-sonmuyor.html">Uyarı ışığı söndü sönmüyor (airbag, stop lambası vb.)</a></li>
+  </ul>
+</nav>
+</main>
+
+<footer class="foot">
+  <p class="notice"><strong>Bilgilendirme:</strong> Bu sitedeki çözümler internette herkese açık kaynaklardan (resmi Togg sayfaları, haber siteleri, forumlar ve kullanıcı paylaşımları) derlenmiştir. Her çözümün altında ilgili kaynaklar belirtilmiştir.</p>
+  <details class="legal">
+    <summary>Yasal uyarı</summary>
+    <p>EVTR bağımsız, ticari olmayan bir bilgi derlemesidir. Togg (Türkiye'nin Otomobili Girişim Grubu) veya bağlı kuruluşları ile herhangi bir bağlantısı, ortaklığı ya da onayı yoktur. "Togg", "T10X", "T10F", "Trumore", "Trugo" ve ilgili marka ve logolar sahiplerine aittir ve burada yalnızca tanımlama amacıyla kullanılmıştır.</p>
+    <p>İçerik yalnızca genel bilgilendirme amaçlıdır; resmi kullanım kılavuzunun, yetkili servisin veya uzman teknik desteğin yerine geçmez. Bilgilerin doğruluğu, güncelliği veya eksiksizliği garanti edilmez; araç yazılımı ve özellikleri zamanla değişebilir. Önerilen adımların uygulanması tamamen kullanıcının kendi sorumluluğundadır. Kanunun izin verdiği en geniş ölçüde, bu sitedeki bilgilerin kullanılmasından doğabilecek zararlardan site sahibi sorumlu değildir.</p>
+    <p>Garanti kapsamını etkileyebilecek müdahalelerden (yüksek gerilim sistemi, elektrik tesisatı, yazılım değişikliği vb.) kaçının. Güvenlik uyarılarında, yanık kokusu, duman veya fren/direksiyon sorunlarında aracı güvenli şekilde durdurun ve yetkili servise ya da Togg Care'e (0850 222 86 44) başvurun; acil durumda 112'yi arayın.</p>
+    <p>Çözüm metinleri kaynaklardan kopyalanmamış, kendi ifadelerimizle özetlenmiştir; görseller sitede çizilmiş genel simgelerdir, Togg'a ait fotoğraf veya logo kullanılmamaktadır. Kullanıcı paylaşımları isim ve kişisel veri içermeyecek şekilde özetlenmiştir. Dış bağlantılardaki içeriklerden ilgili site sahipleri sorumludur.</p>
+    <p><strong>Gizlilik:</strong> Bu site çerez, analiz aracı veya reklam izleyicisi kullanmaz; harici yazı tipi ya da üçüncü taraf hizmet yüklemez. "İşe yaradı / yaramadı" seçiminiz yalnızca kendi tarayıcınızda saklanır ve kişisel veri toplanmaz.</p>
+    <p><strong>İletişim ve içerik kaldırma:</strong> Hatalı bilgi, telif hakkı veya kaldırma talepleriniz için <a href="https://github.com/alidarkstone/evtr/issues">GitHub üzerinden talep</a> oluşturabilirsiniz. Talepler en kısa sürede değerlendirilir ve haklı bulunan içerik kaldırılır.</p>
+  </details>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
