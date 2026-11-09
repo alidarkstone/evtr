@@ -150,3 +150,4 @@ body.wide .detail:empty{display:none}
 .solved h3{margin:0 0 6px;font-size:13px;font-weight:600;color:#1e8e3e;text-transform:uppercase;letter-spacing:.04em}
 .solved ul{margin:0;padding-left:18px}.solved li{margin-bottom:4px}
 .solved a{color:var(--accent);text-decoration:none}
+.s-src{font-size:12px;color:var(--accent);text-decoration:none}.steps.deck .s-src{display:inline-block;margin-top:8px}

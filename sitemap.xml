@@ -2,33 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://alidarkstone.github.io/evtr/</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/ic-trim-sesi.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/amortisor-sesi.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/cam-motoru.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/kamera-arizasi.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/park-sensoru.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/multimedya-yavas.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/yuz-tanima.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/ses-sistemi-donma.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/ayarlar-sifirlaniyor.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/vites-n-gecti.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/arac-calismiyor-sira.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/kapi-montaj.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/sarj-baslamiyor.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/trugo-tak-sarj-et.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/sarj-kablosu-cikmiyor.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/ev-sarji.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/ekran-karardi-dondu.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/ota-guncelleme-yuklenmiyor.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/internet-baglantisi-yok.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/dijital-anahtar-calismiyor.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/dijital-anahtar-paylasma.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/bluetooth-telefon-baglanmiyor.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/trumore-acilmiyor.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/trumore-arac-verisi-yok.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/12v-aku-bitti.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/park-halinde-sarj-dusuyor.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/menzil-dusuk-gorunuyor.html</loc></url>
-  <url><loc>https://alidarkstone.github.io/evtr/sorun/kisin-menzil-dusuyor.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/lastik-basinc-uyarisi.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/lastik-patladi.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/direksiyon-titriyor.html</loc></url>
@@ -38,4 +21,5 @@
   <url><loc>https://alidarkstone.github.io/evtr/sorun/adas-ozellikler.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/kapi-kilit.html</loc></url>
   <url><loc>https://alidarkstone.github.io/evtr/sorun/uyari-isigi-sonmuyor.html</loc></url>
+  <url><loc>https://alidarkstone.github.io/evtr/sorun/navigasyon-konum-hatasi.html</loc></url>
 </urlset>

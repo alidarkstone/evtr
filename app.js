@@ -88,7 +88,7 @@
 
   function card(d, open) {
     const steps = (d.steps || []).map((s, i) =>
-      `<li class="step"><div class="vis"><span class="n">${i + 1}</span>${svg(s.visual)}</div><div><p>${esc(s.text)}</p>${ctlFig(s.control)}</div></li>`).join('');
+      `<li class="step"><div class="vis"><span class="n">${i + 1}</span>${svg(s.visual)}</div><div><p>${esc(s.text)}</p>${s.url ? `<a class="s-src" href="${esc(s.url)}" target="_blank" rel="noopener">kaynak ↗</a>` : ''}${ctlFig(s.control)}</div></li>`).join('');
     const src = (d.sources || []).map(s =>
       `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(' · ');
     const comm = (d.community || []).map(c =>
@@ -102,7 +102,7 @@
         <svg class="chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
       </button>
       <div class="card-b">
-        <ol class="steps">${steps}</ol>
+        ${steps ? `<ol class="steps">${steps}</ol>` : ''}
         ${d.warning ? `<div class="warn">⚠︎ ${esc(d.warning)}</div>` : ''}
         ${solved ? `<div class="solved"><h3>✓ Kullanıcılarda işe yarayan çözümler</h3><ul>${solved}</ul></div>` : ''}
         ${comm ? `<div class="comm"><h3>Topluluk çözümleri</h3><ul>${comm}</ul></div>` : ''}
@@ -202,7 +202,7 @@
   }));
 
   // Popüler aramalar
-  const pop = ['Gıcırtı sesi', 'Kamera görüntüsü yok', 'Şarj başlamıyor', 'Ekran donuyor', 'Dijital anahtar çalışmıyor', 'Menzil düştü', 'Yazılım güncellemesi', 'Lastik basıncı uyarısı'];
+  const pop = DATA.filter(d => (d.steps || []).length || (d.solved || []).length).slice(0, 6).map(d => d.title.split(' / ')[0]);
   suggest.innerHTML = pop.map(p => `<button>${p}</button>`).join('');
   suggest.addEventListener('click', e => { if (e.target.tagName === 'BUTTON') { q.value = e.target.textContent; render(); q.focus(); } });
 

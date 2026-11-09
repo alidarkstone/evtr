@@ -20,33 +20,11 @@ window.TOGG_DATA = [
   ],
   "icon": "door",
   "chronic": true,
-  "steps": [
-   {
-    "text": "Sesin hangi bölgeden geldiğini (kapı, direksiyon, emniyet kemeri, bagaj) ve hangi koşulda (bozuk yol, müzik açıkken) çıktığını not edin.",
-    "visual": "check"
-   },
-   {
-    "text": "Mümkünse sesi telefonla kaydedin; servis tespitinde çok işe yarar.",
-    "visual": "phone"
-   },
-   {
-    "text": "Kapı cepleri, bagaj ve kemer bölgesinde gevşek eşya olmadığından emin olun.",
-    "visual": "door",
-    "control": "door-handle"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "sources": [
    {
     "name": "Şikayetvar – Togg trim sesi şikayetleri",
     "url": "https://www.sikayetvar.com/togg/trim-sesi"
-   },
-   {
-    "name": "Webtekno – Togg kullanıcıları için öneriler",
-    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html"
    }
   ],
   "community": [
@@ -55,456 +33,8 @@ window.TOGG_DATA = [
     "source": "Şikayetvar",
     "url": "https://www.sikayetvar.com/togg/trim-sesi"
    }
-  ]
- },
- {
-  "id": "amortisor-sesi",
-  "title": "Süspansiyon / amortisör gıcırtısı",
-  "category": "Mekanik",
-  "models": [
-   "T10X",
-   "T10F"
   ],
-  "keywords": [
-   "amortisör sesi",
-   "amortisor sesi",
-   "süspansiyon gıcırtı",
-   "suspansiyon gicirti",
-   "ön takım ses",
-   "on takim ses",
-   "tümsek ses",
-   "tumsek ses"
-  ],
-  "icon": "car",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "Sesin tümsek, kasis veya dönüşte mi geldiğini ve hangi tekerlek tarafında olduğunu belirleyin.",
-    "visual": "car"
-   },
-   {
-    "text": "Lastik basınçlarını ve görünür hasarı kontrol edin.",
-    "visual": "tire"
-   },
-   {
-    "text": "Ses artarsa veya yol tutuşunda değişiklik hissederseniz yüksek hızdan kaçının.",
-    "visual": "warning"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Şikayetvar – Togg trim sesi / amortisör şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/trim-sesi"
-   }
-  ],
-  "warning": "Ses ile birlikte çekme veya titreme varsa aracı servise götürmeden uzun yola çıkmayın."
- },
- {
-  "id": "cam-motoru",
-  "title": "Cam açılmıyor / cam motoru arızası",
-  "category": "Kapı & Cam",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "cam açılmıyor",
-   "cam acilmiyor",
-   "cam motoru",
-   "cam kapanmıyor",
-   "cam kapanmiyor",
-   "elektrikli cam",
-   "pencere"
-  ],
-  "icon": "door",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "Aracı kapatıp kilitleyin, birkaç dakika sonra açıp camı yeniden deneyin.",
-    "visual": "reset"
-   },
-   {
-    "text": "Camı diğer kapının tuşundan ya da sürücü kapısındaki ana panelden çalıştırmayı deneyin.",
-    "visual": "door",
-    "control": "door-handle"
-   },
-   {
-    "text": "Cam açık kaldıysa yağmur ve güvenlik için aracı kapalı alana park edin.",
-    "visual": "warning"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Şikayetvar – Togg şikayetleri (cam motoru arızası başlığı)",
-    "url": "https://www.sikayetvar.com/togg/trim-sesi"
-   }
-  ]
- },
- {
-  "id": "kamera-arizasi",
-  "title": "Kamera görüntüsü gelmiyor veya gecikiyor",
-  "category": "Sürüş Destek",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "kamera",
-   "geri görüş kamerası",
-   "geri gorus kamerasi",
-   "kamera gecikmesi",
-   "360 kamera",
-   "kamera siyah ekran",
-   "kamera arızası",
-   "kamera arizasi"
-  ],
-  "icon": "screen",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "Kamera lenslerini (ön, arka, ayna altı) yumuşak bir bezle temizleyin.",
-    "visual": "check"
-   },
-   {
-    "text": "Aracı tamamen kapatıp yeniden başlatarak kamera sisteminin tekrar yüklenmesini sağlayın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Bekleyen yazılım güncellemesi varsa yükleyin; gecikme sorunları güncellemelerle iyileştirildi.",
-    "visual": "settings",
-    "control": "screen"
-   },
-   {
-    "text": "Görüntü gelmezken aynalara güvenerek ve yavaşça manevra yapın.",
-    "visual": "warning"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Şikayetvar – kilit ve kamera arızaları",
-    "url": "https://www.sikayetvar.com/togg/mesafe"
-   },
-   {
-    "name": "Şikayetvar – T10X V2 yazılım/multimedya",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-v2-yazilim-ve-multimedya-sorunlari-cozulmeli"
-   },
-   {
-    "name": "Webtekno – Togg kullanıcıları için öneriler",
-    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html"
-   }
-  ]
- },
- {
-  "id": "park-sensoru",
-  "title": "Park sensörü / park asistanı çalışmıyor",
-  "category": "Sürüş Destek",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "park sensörü",
-   "park sensoru",
-   "park asistanı",
-   "park asistani",
-   "sensör uyarısı",
-   "sensor uyarisi",
-   "ultrasonik sensör",
-   "mesafe uyarısı",
-   "mesafe uyarisi"
-  ],
-  "icon": "warning",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "Tamponlardaki sensörlerin üzerindeki çamur, kar veya buzu temizleyin.",
-    "visual": "check"
-   },
-   {
-    "text": "Ekrandaki sürüş destek ayarlarından park sensörünün açık olduğunu kontrol edin.",
-    "visual": "settings",
-    "control": "screen"
-   },
-   {
-    "text": "Güncelleme sonrası başladıysa aracı kapatıp yeniden açın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın. Arızayı garanti süresi içinde kayda geçirtin.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Şikayetvar – park asistanı ve sensör şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/mesafe"
-   }
-  ],
-  "warning": "Bir kullanıcı garanti dışı park asistanı değişimi için yüksek ücret ödediğini bildiriyor; arızayı erken kaydettirin."
- },
- {
-  "id": "multimedya-yavas",
-  "title": "Multimedya geç açılıyor / yavaş",
-  "category": "Yazılım",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "multimedya yavaş",
-   "multimedya yavas",
-   "ekran geç açılıyor",
-   "ekran gec aciliyor",
-   "donma",
-   "takılma",
-   "takilma",
-   "açılış gecikmesi",
-   "acilis gecikmesi"
-  ],
-  "icon": "screen",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "Araç yeni açıldığında sistemin tamamen yüklenmesi için birkaç saniye bekleyin.",
-    "visual": "screen",
-    "control": "screen"
-   },
-   {
-    "text": "Aracı kapatıp kapıyı kilitleyin, birkaç dakika sonra yeniden başlatın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Ayarlar üzerinden yazılım sürümünü kontrol edin, güncelleme varsa yükleyin.",
-    "visual": "settings",
-    "control": "screen"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Şikayetvar – T10X V2 yazılım ve multimedya",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-v2-yazilim-ve-multimedya-sorunlari-cozulmeli"
-   },
-   {
-    "name": "inside-digital – Togg T10X V2 testi",
-    "url": "https://www.inside-digital.de/e-autos/togg-t10x-v2/test"
-   }
-  ]
- },
- {
-  "id": "yuz-tanima",
-  "title": "Yüz tanıma geç çalışıyor / tanımıyor",
-  "category": "Yazılım",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "yüz tanıma",
-   "yuz tanima",
-   "sürücü profili",
-   "surucu profili",
-   "profil yüklenmiyor",
-   "profil yuklenmiyor",
-   "kamera tanıma",
-   "kamera tanima"
-  ],
-  "icon": "seat",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "İç kameranın önünü kapatan bir şey (güneş gözlüğü, şapka) olmadığından emin olun.",
-    "visual": "check"
-   },
-   {
-    "text": "Sürücü profilini ekrandan elle seçin.",
-    "visual": "settings",
-    "control": "screen"
-   },
-   {
-    "text": "Sorun güncelleme sonrası başladıysa profili silip yüzünüzü yeniden tanıtın.",
-    "visual": "reset",
-    "control": "screen"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Şikayetvar – T10X eksikleri (1.5 güncellemesi sonrası yüz tanıma)",
-    "url": "https://www.sikayetvar.com/togg/t10x/eksikleri"
-   },
-   {
-    "name": "Şikayetvar – T10X V2 yazılım/multimedya",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-v2-yazilim-ve-multimedya-sorunlari-cozulmeli"
-   }
-  ]
- },
- {
-  "id": "ses-sistemi-donma",
-  "title": "Meridian ses sistemi donuyor / radyo takılıyor",
-  "category": "Multimedya",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "ses sistemi",
-   "meridian",
-   "radyo takılıyor",
-   "radyo takiliyor",
-   "ses gelmiyor",
-   "hoparlör",
-   "hoparlor",
-   "müzik donuyor",
-   "muzik donuyor"
-  ],
-  "icon": "screen",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "Ses kaynağını değiştirip (radyo, Bluetooth) sorunun kaynakla ilgili olup olmadığını deneyin.",
-    "visual": "settings",
-    "control": "screen"
-   },
-   {
-    "text": "Aracı kapatıp yeniden başlatarak multimedyayı sıfırlayın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Yazılım güncellemesi bekliyorsa yükleyin.",
-    "visual": "settings"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Şikayetvar – Meridian ses sistemi donması",
-    "url": "https://www.sikayetvar.com/togg/meridian-ses-sistemi-donmasi-ve-5-aylik-servis-beklemesi-magduriyetim"
-   },
-   {
-    "name": "Şikayetvar – T10X V2 yazılım/multimedya",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-v2-yazilim-ve-multimedya-sorunlari-cozulmeli"
-   }
-  ]
- },
- {
-  "id": "ayarlar-sifirlaniyor",
-  "title": "Ayarlar her açılışta sıfırlanıyor (dil, rejenerasyon)",
-  "category": "Yazılım",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "ayarlar sıfırlanıyor",
-   "ayarlar sifirlaniyor",
-   "dil değişiyor",
-   "dil degisiyor",
-   "rejenerasyon",
-   "rejen seviyesi",
-   "profil kaydetmiyor",
-   "ayar kaydetmiyor"
-  ],
-  "icon": "settings",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "Ayarı yaptıktan sonra doğru sürücü profilinin seçili olduğunu kontrol edin.",
-    "visual": "seat",
-    "control": "screen"
-   },
-   {
-    "text": "Aracı kapatmadan önce birkaç saniye bekleyin ki ayar kaydedilsin.",
-    "visual": "check"
-   },
-   {
-    "text": "Güncel yazılımı yükleyin.",
-    "visual": "settings",
-    "control": "screen"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "inside-digital – Togg T10X V2 testi",
-    "url": "https://www.inside-digital.de/e-autos/togg-t10x-v2/test"
-   }
-  ]
- },
- {
-  "id": "vites-n-gecti",
-  "title": "Vites yanlışlıkla N'ye geçiyor",
-  "category": "Sürüş",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "vites boşa geçti",
-   "vites bosa gecti",
-   "N konumu",
-   "vites topuzu",
-   "döner vites",
-   "doner vites",
-   "hız sabitleyici kapandı",
-   "hiz sabitleyici kapandi"
-  ],
-  "icon": "warning",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "Araç yavaşlarsa güvenli şekilde fren yapın ve göstergede vites konumunu kontrol edin.",
-    "visual": "warning"
-   },
-   {
-    "text": "Orta konsoldaki döner vites seçiciyi D konumuna getirin.",
-    "visual": "car",
-    "control": "gear-selector"
-   },
-   {
-    "text": "Hız sabitleyiciyi yeniden etkinleştirin.",
-    "visual": "settings"
-   },
-   {
-    "text": "Sürüş sırasında dizinizin veya eşyaların vites seçiciye değmemesine dikkat edin.",
-    "visual": "check",
-    "control": "gear-selector"
-   }
-  ],
-  "sources": [
-   {
-    "name": "inside-digital – Togg T10X V2 testi",
-    "url": "https://www.inside-digital.de/e-autos/togg-t10x-v2/test"
-   },
-   {
-    "name": "Wikipedia – Togg T10X",
-    "url": "https://en.wikipedia.org/wiki/Togg_T10X"
-   }
-  ]
+  "solved": []
  },
  {
   "id": "arac-calismiyor-sira",
@@ -530,82 +60,17 @@ window.TOGG_DATA = [
   "chronic": true,
   "steps": [
    {
-    "text": "Anahtarın veya telefonun araçta olduğundan emin olun.",
-    "visual": "key"
-   },
-   {
-    "text": "Fren pedalına basılı tutarken başlatma düğmesine basın; sıralamaya dikkat edin.",
-    "visual": "car"
-   },
-   {
-    "text": "Alarm çalarsa aracı anahtar veya uygulama ile kilitleyip yeniden açın.",
-    "visual": "app"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "inside-digital – Togg T10X V2 testi",
-    "url": "https://www.inside-digital.de/e-autos/togg-t10x-v2/test"
-   },
-   {
-    "name": "DonanımHaber – T10X donanım ve yazılım güncellemesi",
-    "url": "https://www.donanimhaber.com/togg-t10x-lerde-onemli-donanim-ve-yazilim-guncellemesi--204108"
-   }
-  ]
- },
- {
-  "id": "kapi-montaj",
-  "title": "Kapı sarkması / kapı ve döşeme montaj hatası",
-  "category": "Kapı & Cam",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "kapı sarkıyor",
-   "kapi sarkiyor",
-   "kapı boşluğu",
-   "kapi boslugu",
-   "montaj hatası",
-   "montaj hatasi",
-   "döşeme",
-   "doseme",
-   "kapı kapanmıyor",
-   "kapi kapanmiyor"
-  ],
-  "icon": "door",
-  "chronic": true,
-  "steps": [
-   {
-    "text": "Kapı, tampon ve kaput boşluklarını gün ışığında karşılaştırarak kontrol edin.",
+    "text": "Kaza onarımı sonrası araç kilidi açılmıyor ve start/stop'a tepki vermiyordu; kullanıcı sorunun Adana yetkili servisi tarafından çözüldüğünü yazdı.",
+    "url": "https://www.sikayetvar.com/togg/togg-tamir-surecinde-magduriyet-ve-ikame-arac-sorunu",
     "visual": "check"
-   },
-   {
-    "text": "Kapının zor kapanıp kapanmadığını ve kilitlenme uyarısı verip vermediğini deneyin.",
-    "visual": "door",
-    "control": "door-handle"
-   },
-   {
-    "text": "Fotoğraf çekip teslimattan sonra en kısa sürede kayda geçirtin.",
-    "visual": "phone"
-   },
-   {
-    "text": "Sorun sürerse Togg Care'i (0850 222 86 44) arayıp servis randevusu alın.",
-    "visual": "service"
    }
   ],
-  "sources": [
+  "sources": [],
+  "solved": [
    {
-    "name": "Şikayetvar – kapı sarkması ve kilit şikayeti",
-    "url": "https://www.sikayetvar.com/togg/mesafe"
-   },
-   {
-    "name": "Webtekno – Togg kullanıcıları için öneriler",
-    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html"
+    "tip": "Kaza onarımı sonrası araç kilidi açılmıyor ve start/stop'a tepki vermiyordu; kullanıcı sorunun Adana yetkili servisi tarafından çözüldüğünü yazdı.",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/togg-tamir-surecinde-magduriyet-ve-ikame-arac-sorunu"
    }
   ]
  },
@@ -634,25 +99,19 @@ window.TOGG_DATA = [
   "icon": "bolt",
   "steps": [
    {
-    "text": "Şarj soketini ve kablo ucunu kontrol edin; kir, toz veya nem varsa kuru bir bezle temizleyin.",
-    "visual": "cable",
-    "control": "charge-port"
-   },
-   {
-    "text": "Kabloyu çıkarıp sıkıca yeniden takın ve istasyon ekranındaki hata mesajını not edin.",
-    "visual": "bolt"
-   },
-   {
-    "text": "Farklı bir istasyon veya farklı şarj tipi (AC/DC) deneyerek sorunun araçta mı istasyonda mı olduğunu ayırt edin.",
+    "text": "Yeni araç Trugo istasyonlarında şarj almıyordu, reset ve sigortayı çıkarıp takmak işe yaramadı; Togg yazılım güncellemesi yaptı ve kullanıcı şarjın (geçici olarak) düzeldiğini yazdı.",
+    "url": "https://www.sikayetvar.com/togg/yeni-togg-aracta-trugo-sarj-sorunu-yuzunden-yolda-kaldik",
     "visual": "check"
    },
    {
-    "text": "Aracı kapatıp kilitleyin, bir süre bekleyip şarjı yeniden deneyin.",
-    "visual": "reset"
+    "text": "Şarj alamama arızasında servis OBC (araç üstü şarj cihazı) parçasını değiştirdi; 33 gün parça beklemesinin ardından kullanıcı aracını teslim aldı.",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-obc-arizasi-belirsiz-onarim-suresi-ve-cozum-eksikligi",
+    "visual": "check"
    },
    {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
+    "text": "Tekrarlayan şarj alamama, akü boşalması ve kendiliğinden kapanan ekran sorunları üç servis ziyaretinde çözülemeyince Togg araç değişimi yaptı; kullanıcı destek için teşekkür etti.",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracimda-surekli-sarj-ve-aku-sorunlari-guven-kaybina-yol-acti",
+    "visual": "check"
    }
   ],
   "warning": "Hasarlı kablo, ıslak soket veya yanık kokusu varsa şarj etmeyin.",
@@ -665,178 +124,25 @@ window.TOGG_DATA = [
   ],
   "sources": [
    {
-    "name": "Webtekno – Togg kullanıyorsanız dikkat etmeniz gerekenler",
-    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html"
-   },
-   {
-    "name": "Şikayetvar – T10X şarj problemi",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracimda-yasadigim-sarj-problemi-ve-ikame-arac-magduriyeti"
-   },
-   {
-    "name": "Şikayetvar – Togg arızalandı şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/arizalandi"
-   },
-   {
     "name": "Şikayetvar",
     "url": "https://www.sikayetvar.com/togg/sifirlama"
    }
-  ]
- },
- {
-  "id": "trugo-tak-sarj-et",
-  "title": "Trugo'da Tak ve Şarj Et (AutoCharge) çalışmıyor",
-  "category": "Şarj",
-  "models": [
-   "T10X",
-   "T10F"
   ],
-  "keywords": [
-   "trugo",
-   "autocharge",
-   "tak ve şarj et",
-   "tak sarj et",
-   "otomatik şarj",
-   "araç tanınmıyor",
-   "trugo uygulama",
-   "qr",
-   "şarj başlatma",
-   "sarj baslatma"
-  ],
-  "icon": "bolt",
-  "steps": [
+  "solved": [
    {
-    "text": "Aracın yazılım sürümünü kontrol edin: Haberlere göre AutoCharge için T10X'te 1.7.2, T10F'de 2.0 yazılımı gerekiyor.",
-    "visual": "settings"
+    "tip": "Yeni araç Trugo istasyonlarında şarj almıyordu, reset ve sigortayı çıkarıp takmak işe yaramadı; Togg yazılım güncellemesi yaptı ve kullanıcı şarjın (geçici olarak) düzeldiğini yazdı.",
+    "source": "Şikayetvar (kullanıcı çözüldü dedi)",
+    "url": "https://www.sikayetvar.com/togg/yeni-togg-aracta-trugo-sarj-sorunu-yuzunden-yolda-kaldik"
    },
    {
-    "text": "Yazılım güncel değilse bekleyen bir OTA güncellemesi olup olmadığına bakın.",
-    "visual": "reset"
+    "tip": "Şarj alamama arızasında servis OBC (araç üstü şarj cihazı) parçasını değiştirdi; 33 gün parça beklemesinin ardından kullanıcı aracını teslim aldı.",
+    "source": "Şikayetvar (kullanıcı çözüldü dedi)",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-obc-arizasi-belirsiz-onarim-suresi-ve-cozum-eksikligi"
    },
    {
-    "text": "Otomatik başlamazsa şarjı Trugo uygulamasından istasyonu seçerek manuel başlatın.",
-    "visual": "app"
-   },
-   {
-    "text": "İstasyonda sorun sürerse 7/24 Trugo kullanıcı hizmetlerine bildirin.",
-    "visual": "phone"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Karar – Trugo'da tak ve şarj et dönemi",
-    "url": "https://www.karar.com/ekonomi-haberleri/trugoda-tak-ve-sarj-et-donemi-togg-kullanicilarina-ozel-indirimlerin-2042583"
-   },
-   {
-    "name": "LOG – Trugo uygulaması",
-    "url": "https://www.log.com.tr/togg-tarafindan-hazirlanan-trugo-uygulamasi-cikti"
-   },
-   {
-    "name": "Tamindir – TruOS 1.7.2 ve internet paketi",
-    "url": "https://www.tamindir.com/haber/togg-t10x-guncellemesi-1-aylik-internet-paketi_106630/amp/"
-   }
-  ]
- },
- {
-  "id": "sarj-kablosu-cikmiyor",
-  "title": "Şarjı durdurma / kablo çıkmıyor",
-  "category": "Şarj",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "kablo çıkmıyor",
-   "kablo cikmiyor",
-   "kablo kilitli",
-   "şarjı durdur",
-   "sarji durdur",
-   "şarj kapağı",
-   "soket kilidi",
-   "şarj bitirme",
-   "kablo takıldı"
-  ],
-  "icon": "cable",
-  "steps": [
-   {
-    "text": "Araç ekranındaki şarj kontrol ekranında 'Şarjı Durdur ve Kilidi Aç' seçeneğine dokunun.",
-    "visual": "screen"
-   },
-   {
-    "text": "Kamu istasyonundaysanız oturumu Trugo uygulamasından da sonlandırın.",
-    "visual": "app"
-   },
-   {
-    "text": "Aracın kilidini açıp kabloyu çıkarın ve şarj kapağını kapatın.",
-    "visual": "cable"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
-  "warning": "Kabloyu zorla çekmeyin; soket ve kilit mekanizması hasar görebilir.",
-  "sources": [
-   {
-    "name": "Togg SSS (togg.com.tr)",
-    "url": "https://togg.com.tr/en/faq"
-   },
-   {
-    "name": "LOG – Trugo uygulaması",
-    "url": "https://www.log.com.tr/togg-tarafindan-hazirlanan-trugo-uygulamasi-cikti"
-   }
-  ]
- },
- {
-  "id": "ev-sarji",
-  "title": "Evde şarj / duvar şarj cihazı",
-  "category": "Şarj",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "ev şarjı",
-   "ev sarji",
-   "duvar şarj",
-   "wallbox",
-   "ev tipi şarj",
-   "3.7 kw",
-   "yavaş şarj",
-   "yavas sarj",
-   "şarj cihazı kurulumu",
-   "priz"
-  ],
-  "icon": "bolt",
-  "steps": [
-   {
-    "text": "Standart prizden 3,7 kW ile şarj bataryaya göre 24 saati aşabilir; bu yavaşlık normaldir.",
-    "visual": "bolt"
-   },
-   {
-    "text": "Duvar tipi şarj cihazı için Togg Care üzerinden satın alma ve kurulum talebi oluşturun; önce yerinde keşif yapılır.",
-    "visual": "app"
-   },
-   {
-    "text": "Ortak otoparkta kurulum için yönetimden yazılı onay alın ve elektrik panosunu bir uzmana kontrol ettirin.",
-    "visual": "check"
-   },
-   {
-    "text": "Cihazın internet/SIM bağlantısını kurulumdan önce ayarlayın; aksi halde çevrimdışı çalışır ve yalnızca şarj aktarır.",
-    "visual": "settings"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Togg SSS (togg.com.tr)",
-    "url": "https://togg.com.tr/en/faq"
-   },
-   {
-    "name": "Şikayetvar – Togg arızalandı şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/arizalandi"
+    "tip": "Tekrarlayan şarj alamama, akü boşalması ve kendiliğinden kapanan ekran sorunları üç servis ziyaretinde çözülemeyince Togg araç değişimi yaptı; kullanıcı destek için teşekkür etti.",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracimda-surekli-sarj-ve-aku-sorunlari-guven-kaybina-yol-acti"
    }
   ]
  },
@@ -861,28 +167,7 @@ window.TOGG_DATA = [
    "reset"
   ],
   "icon": "screen",
-  "steps": [
-   {
-    "text": "Güvenli bir yere çekin; sürüş sırasında sinyal ve far bilgisi görünmüyorsa dikkatli olun.",
-    "visual": "warning"
-   },
-   {
-    "text": "Aracı tamamen kapatıp kilitleyin, birkaç dakika bekleyip yeniden çalıştırın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Yazılımın güncel olduğunu kontrol edin; donma şikayetlerinin önemli kısmı güncellemelerle azaltıldı.",
-    "visual": "settings"
-   },
-   {
-    "text": "Sorun belirli bir uygulamayla başladıysa (ör. navigasyon) o uygulamayı kaldırmayı deneyin.",
-    "visual": "screen"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "warning": "Gösterge ekranı kapalıyken hız ve uyarıları göremezsiniz; aracı güvenli yerde durdurun.",
   "community": [
    {
@@ -898,18 +183,6 @@ window.TOGG_DATA = [
   ],
   "sources": [
    {
-    "name": "Webtekno – Seyir halinde ekranlar kapandı",
-    "url": "https://www.webtekno.com/seyir-halinde-togg-t10x-aniden-kapandi-h136901.html"
-   },
-   {
-    "name": "Webtekno – Togg kullanıyorsanız dikkat etmeniz gerekenler",
-    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html"
-   },
-   {
-    "name": "Yüzde100Yerli – T10F yazılım güncellemesi",
-    "url": "https://www.yuzde100yerli.com/en/software-update-announced-for-togg-t10f-eyes-on-resolution-of-user-complaints/"
-   },
-   {
     "name": "DonanımHaber Forum",
     "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1325"
    },
@@ -918,7 +191,8 @@ window.TOGG_DATA = [
     "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1324"
    }
   ],
-  "chronic": true
+  "chronic": true,
+  "solved": []
  },
  {
   "id": "ota-guncelleme-yuklenmiyor",
@@ -943,24 +217,9 @@ window.TOGG_DATA = [
   "icon": "reset",
   "steps": [
    {
-    "text": "Güncellemeler teslim sırasına göre kademeli dağıtılır; bildirim birkaç hafta geç gelebilir.",
+    "text": "Araç aylarca 1.5 sürümünde kaldı, DTC sıfırlama ve yeniden başlatma işe yaramadı; Togg Care ekibi kullanıcıyla iletişime geçip güncelleme sorununu çözdü.",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-v2-yazilim-guncellemesi-basarisiz-arac-15-surumunde-kaldi",
     "visual": "check"
-   },
-   {
-    "text": "Başlatmadan önce yeterli batarya seviyesi olduğundan emin olun (haberlerde en az %20 batarya önerilmiş) ve aracı park halinde bırakın.",
-    "visual": "battery"
-   },
-   {
-    "text": "Araçta internet bağlantısının (Dijital Premium paket/şebeke) çalıştığını kontrol edin.",
-    "visual": "settings"
-   },
-   {
-    "text": "Kurulum internet hızına göre 3 saate kadar sürebilir; bu sürede aracı kullanmayın.",
-    "visual": "car"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
    }
   ],
   "community": [
@@ -972,27 +231,18 @@ window.TOGG_DATA = [
   ],
   "sources": [
    {
-    "name": "Tamindir – TruOS 1.7.2 ve internet paketi",
-    "url": "https://www.tamindir.com/haber/togg-t10x-guncellemesi-1-aylik-internet-paketi_106630/amp/"
-   },
-   {
-    "name": "Yüzde100Yerli – T10F yazılım güncellemesi",
-    "url": "https://www.yuzde100yerli.com/en/software-update-announced-for-togg-t10f-eyes-on-resolution-of-user-complaints/"
-   },
-   {
-    "name": "Şikayetvar – T10X internet yok",
-    "url": "https://www.sikayetvar.com/togg/t10x/internet-yok"
-   },
-   {
-    "name": "Şikayetvar – T10X V2 yazılım ve multimedya sorunları",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-v2-yazilim-ve-multimedya-sorunlari-cozulmeli"
-   },
-   {
     "name": "Şikayetvar",
     "url": "https://www.sikayetvar.com/togg/sifirlama"
    }
   ],
-  "chronic": true
+  "chronic": true,
+  "solved": [
+   {
+    "tip": "Araç aylarca 1.5 sürümünde kaldı, DTC sıfırlama ve yeniden başlatma işe yaramadı; Togg Care ekibi kullanıcıyla iletişime geçip güncelleme sorununu çözdü.",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-v2-yazilim-guncellemesi-basarisiz-arac-15-surumunde-kaldi"
+   }
+  ]
  },
  {
   "id": "internet-baglantisi-yok",
@@ -1017,24 +267,9 @@ window.TOGG_DATA = [
   "icon": "settings",
   "steps": [
    {
-    "text": "Dijital Premium paketinin aktif ve süresinin dolmamış olduğunu Trumore'dan kontrol edin.",
-    "visual": "app"
-   },
-   {
-    "text": "Kapalı otopark gibi kapsama dışı bir yerdeyseniz açık alana çıkıp tekrar deneyin.",
-    "visual": "map"
-   },
-   {
-    "text": "Aracı kapatıp kilitleyin, bir süre bekleyip yeniden başlatın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Togg, destek taleplerinin Trumore üzerinden iletilmesini istiyor; talep numaranızı saklayın.",
-    "visual": "app"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
+    "text": "İnternet kopması, klima, park sensörü ve lastik basıncı uyarıları Bursa Osmangazi servisinde yazılım müdahalesiyle giderildi (kullanıcı sonradan enerji sistemi hatasının tekrar çıktığını da yazdı).",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-v2de-cozulmeyen-internet-klima-ve-sensor-arizalari",
+    "visual": "check"
    }
   ],
   "community": [
@@ -1055,117 +290,16 @@ window.TOGG_DATA = [
     "url": "https://www.sikayetvar.com/togg/t10x/internet-yok"
    },
    {
-    "name": "Şikayetvar – Dijital Premium internet/şebeke sorunu",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-premiumda-internet-ve-sebeke-sorunu-cozulmuyor"
-   },
-   {
-    "name": "Tamindir – TruOS 1.7.2 ve internet paketi",
-    "url": "https://www.tamindir.com/haber/togg-t10x-guncellemesi-1-aylik-internet-paketi_106630/amp/"
-   },
-   {
     "name": "Şikayetvar",
     "url": "https://www.sikayetvar.com/togg/togg-aracta-surekli-sos-hatasi-ve-klima-calismiyor-servis-destegi-yok"
    }
   ],
-  "chronic": true
- },
- {
-  "id": "dijital-anahtar-calismiyor",
-  "title": "Dijital anahtar (telefon) çalışmıyor",
-  "category": "Dijital Anahtar",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "dijital anahtar",
-   "dijital anahtar çalışmıyor",
-   "telefon anahtar",
-   "anahtar",
-   "kapı açılmıyor",
-   "bluetooth",
-   "trumore anahtar",
-   "akıllı cihazım",
-   "telefonla açma",
-   "kilit açılmıyor"
-  ],
-  "icon": "key",
-  "steps": [
+  "chronic": true,
+  "solved": [
    {
-    "text": "Telefonun Bluetooth'unun açık olduğundan ve araca yakın (yaklaşık 3 metre) durduğunuzdan emin olun.",
-    "visual": "phone"
-   },
-   {
-    "text": "Trumore uygulamasını en son sürüme güncelleyin.",
-    "visual": "app"
-   },
-   {
-    "text": "Telefonun Bluetooth listesinden aracı silip Trumore'da 'Akıllı Cihazım' bölümünden anahtarı yeniden eşleştirin.",
-    "visual": "key"
-   },
-   {
-    "text": "Acil durumda aracı fiziksel anahtar veya kartla açın.",
-    "visual": "key"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
-  "warning": "Telefon şarjı bitebileceği için fiziksel anahtarı/kartı yanınızda taşıyın.",
-  "sources": [
-   {
-    "name": "DonanımHaber – Togg dijital anahtar nasıl kullanılır",
-    "url": "https://www.donanimhaber.com/togg-a-dijital-anahtar-ozelligi-geldi-nasil-kullanilir--189409"
-   },
-   {
-    "name": "Şikayetvar – Bluetooth ve dijital anahtar sorunu",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracimda-bluetooth-ve-dijital-anahtar-sorunu-cozulemiyor"
-   }
-  ],
-  "chronic": true
- },
- {
-  "id": "dijital-anahtar-paylasma",
-  "title": "Dijital anahtar oluşturma ve paylaşma",
-  "category": "Dijital Anahtar",
-  "models": [
-   "T10X"
-  ],
-  "keywords": [
-   "anahtar paylaş",
-   "anahtar paylas",
-   "dijital anahtar oluştur",
-   "qr kod",
-   "yeni anahtar",
-   "pin kodu",
-   "eşleştirme",
-   "eslestirme",
-   "aile anahtar"
-  ],
-  "icon": "key",
-  "steps": [
-   {
-    "text": "Aracı fiziksel anahtarla açın ve araç ekranında Bağlantılar altındaki erişim cihazları bölümüne gidin.",
-    "visual": "screen"
-   },
-   {
-    "text": "Trumore'da 'Akıllı Cihazım' > 'Yeni Anahtar Oluştur' adımlarını izleyip 'Bağlan'a basın ve gösterilen PIN'i kopyalayın.",
-    "visual": "app"
-   },
-   {
-    "text": "Telefonun Bluetooth menüsünden aracı seçip PIN'i girerek eşleştirin.",
-    "visual": "phone"
-   },
-   {
-    "text": "Paylaşmak için alıcı Trumore'da QR kodunu oluşturur, siz 'Paylaşılan anahtarlar' > 'Yeni Anahtar Oluştur' ile bu kodu taratırsınız.",
-    "visual": "app"
-   }
-  ],
-  "sources": [
-   {
-    "name": "DonanımHaber – Togg dijital anahtar nasıl kullanılır",
-    "url": "https://www.donanimhaber.com/togg-a-dijital-anahtar-ozelligi-geldi-nasil-kullanilir--189409"
+    "tip": "İnternet kopması, klima, park sensörü ve lastik basıncı uyarıları Bursa Osmangazi servisinde yazılım müdahalesiyle giderildi (kullanıcı sonradan enerji sistemi hatasının tekrar çıktığını da yazdı).",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-v2de-cozulmeyen-internet-klima-ve-sensor-arizalari"
    }
   ]
  },
@@ -1190,24 +324,7 @@ window.TOGG_DATA = [
    "eşleştirme"
   ],
   "icon": "phone",
-  "steps": [
-   {
-    "text": "Telefonun Bluetooth'unu kapatıp açın ve telefonu yeniden başlatın.",
-    "visual": "phone"
-   },
-   {
-    "text": "Telefonun ve aracın Bluetooth listelerinden eski eşleşmeyi silip yeniden eşleştirin.",
-    "visual": "settings"
-   },
-   {
-    "text": "Araç yazılımının güncel olduğunu kontrol edin; güncellemelerde Bluetooth ve ses iyileştirmeleri yayımlandı.",
-    "visual": "reset"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "community": [
    {
     "tip": "Forumda bazı kullanıcılar telefon bağlantısının kararsız olduğunu, navigasyon için telefonu ayrı kullandıklarını yazmış.",
@@ -1217,18 +334,11 @@ window.TOGG_DATA = [
   ],
   "sources": [
    {
-    "name": "Şikayetvar – Bluetooth ve dijital anahtar sorunu",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracimda-bluetooth-ve-dijital-anahtar-sorunu-cozulemiyor"
-   },
-   {
-    "name": "Yüzde100Yerli – T10F yazılım güncellemesi",
-    "url": "https://www.yuzde100yerli.com/en/software-update-announced-for-togg-t10f-eyes-on-resolution-of-user-complaints/"
-   },
-   {
     "name": "DonanımHaber Forum",
     "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1325"
    }
-  ]
+  ],
+  "solved": []
  },
  {
   "id": "trumore-acilmiyor",
@@ -1252,37 +362,40 @@ window.TOGG_DATA = [
   "icon": "app",
   "steps": [
    {
-    "text": "Telefonu yeniden başlatıp uygulamayı tekrar açın.",
-    "visual": "phone"
+    "text": "Uygulamayı yeniden kurmak ve başka telefon denemek işe yaramadı; serviste aracın internete bağlanmadığı tespit edildi, multimedya ile ilgili bir parça değişince araç Trumore'a eklenebildi.",
+    "url": "https://www.sikayetvar.com/togg/trumore-uygulamasina-t10x-arac-eklenemiyor-ve-geri-donus-yok",
+    "visual": "check"
    },
    {
-    "text": "İnternet bağlantınızı (Wi‑Fi/mobil veri) kontrol edin.",
-    "visual": "settings"
+    "text": "T10F'yi Trumore'a eklerken şasi numarası okunamıyor hatası alınıyordu; kullanıcı telefonda güncelleme gerekmeden işlemin Togg tarafında tamamlandığını ve sorunun çözüldüğünü yazdı.",
+    "url": "https://www.sikayetvar.com/togg/togg-care-yanitlarindaki-gecikme-ve-trumore-entegrasyon-sorunlariyla-buyuk-hayal-kirikligi",
+    "visual": "check"
    },
    {
-    "text": "Uygulamanın önbelleğini telefon ayarlarından temizleyin.",
-    "visual": "settings"
-   },
-   {
-    "text": "Trumore'u App Store/Play Store'dan güncelleyin; düzelmezse silip yeniden yükleyin.",
-    "visual": "app"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
+    "text": "ADAS'ın görünmemesi ve Trumore'a akıllı cihaz eklenememesi Togg tarafından uzaktan halledildi; kullanıcı teşekkür etti.",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracta-adas-aktiflestirilemedi-trumore-akilli-cihaz-eklenemedi-ve-sol-kamera-calismiyor",
+    "visual": "check"
    }
   ],
-  "sources": [
+  "sources": [],
+  "chronic": true,
+  "solved": [
    {
-    "name": "Tamindir – Trumore açılmıyor çözümü",
-    "url": "https://www.tamindir.com/blog/trumore-acilmiyor-cozum_80061/"
+    "tip": "Uygulamayı yeniden kurmak ve başka telefon denemek işe yaramadı; serviste aracın internete bağlanmadığı tespit edildi, multimedya ile ilgili bir parça değişince araç Trumore'a eklenebildi.",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/trumore-uygulamasina-t10x-arac-eklenemiyor-ve-geri-donus-yok"
    },
    {
-    "name": "Togg Destek Merkezi",
-    "url": "https://support.togg.com.tr/"
+    "tip": "T10F'yi Trumore'a eklerken şasi numarası okunamıyor hatası alınıyordu; kullanıcı telefonda güncelleme gerekmeden işlemin Togg tarafında tamamlandığını ve sorunun çözüldüğünü yazdı.",
+    "source": "Şikayetvar (kullanıcı çözüldü dedi)",
+    "url": "https://www.sikayetvar.com/togg/togg-care-yanitlarindaki-gecikme-ve-trumore-entegrasyon-sorunlariyla-buyuk-hayal-kirikligi"
+   },
+   {
+    "tip": "ADAS'ın görünmemesi ve Trumore'a akıllı cihaz eklenememesi Togg tarafından uzaktan halledildi; kullanıcı teşekkür etti.",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracta-adas-aktiflestirilemedi-trumore-akilli-cihaz-eklenemedi-ve-sol-kamera-calismiyor"
    }
-  ],
-  "chronic": true
+  ]
  },
  {
   "id": "trumore-arac-verisi-yok",
@@ -1307,20 +420,9 @@ window.TOGG_DATA = [
   "icon": "app",
   "steps": [
    {
-    "text": "Aracın internet bağlantısının çalıştığını kontrol edin; araç çevrimdışıysa uygulama veri alamaz.",
-    "visual": "settings"
-   },
-   {
-    "text": "Trumore'dan çıkış yapıp Tru.ID ile yeniden giriş yapın.",
-    "visual": "app"
-   },
-   {
-    "text": "Aracı kapatıp kilitleyin, bir süre bekleyip uygulamayı yenileyin.",
-    "visual": "reset"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
+    "text": "Araç verileri Trumore'da güncellenmiyordu; şikayet 'Çözüldü' işaretlendi ve kullanıcı teşekkür etti (çözüm yöntemi yazılmamış).",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-verileri-guncellenmiyor-trumore-erisim-sorunu-ve-cozum-bekleyisi",
+    "visual": "check"
    }
   ],
   "community": [
@@ -1332,23 +434,18 @@ window.TOGG_DATA = [
   ],
   "sources": [
    {
-    "name": "Şikayetvar – T10X internet yok",
-    "url": "https://www.sikayetvar.com/togg/t10x/internet-yok"
-   },
-   {
-    "name": "Togg T10X OTA 1.4 duyurusu",
-    "url": "https://togg.com.tr/en/t10x-ota-1-4"
-   },
-   {
-    "name": "Şikayetvar (EN) – T10F güvenlik sistemi/SOS sorunu",
-    "url": "https://www.sikayetvar.com/en/togg-us/togg-has-not-fixed-my-t10f-safety-system-problem-for-over-a-month"
-   },
-   {
     "name": "Şikayetvar",
     "url": "https://www.sikayetvar.com/togg/sifirlama"
    }
   ],
-  "chronic": true
+  "chronic": true,
+  "solved": [
+   {
+    "tip": "Araç verileri Trumore'da güncellenmiyordu; şikayet 'Çözüldü' işaretlendi ve kullanıcı teşekkür etti (çözüm yöntemi yazılmamış).",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-verileri-guncellenmiyor-trumore-erisim-sorunu-ve-cozum-bekleyisi"
+   }
+  ]
  },
  {
   "id": "12v-aku-bitti",
@@ -1371,28 +468,7 @@ window.TOGG_DATA = [
    "takviye"
   ],
   "icon": "battery",
-  "steps": [
-   {
-    "text": "Aracın tamamen tepkisiz olup olmadığını kontrol edin; kapıyı fiziksel anahtar/kartla açmayı deneyin.",
-    "visual": "key"
-   },
-   {
-    "text": "Uzun süre kullanılmayacaksa aracı ana batarya yeterli seviyedeyken bırakın; araç 12V aküyü ana bataryadan periyodik olarak şarj eder.",
-    "visual": "battery"
-   },
-   {
-    "text": "Yol yardım hizmetini arayın; yetkisiz takviye veya kutup sökme denemelerinden kaçının.",
-    "visual": "phone"
-   },
-   {
-    "text": "Servis ziyaretinde yüksek voltaj bataryasıyla birlikte 12V aküyü de kontrol ettirin.",
-    "visual": "service"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "warning": "Elektrikli araçta yüksek voltaj sistemi bulunur; akü bağlantılarına yalnızca yetkili kişiler müdahale etmeli.",
   "community": [
    {
@@ -1403,71 +479,11 @@ window.TOGG_DATA = [
   ],
   "sources": [
    {
-    "name": "Webtekno – Togg kullanıyorsanız dikkat etmeniz gerekenler",
-    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html"
-   },
-   {
-    "name": "Tamindir – Togg park halinde ne kadar elektrik harcıyor",
-    "url": "https://www.tamindir.com/haber/togg-park-halinde-ne-kadar-elektrik-harciyor_105557/"
-   },
-   {
-    "name": "Yüzde100Yerli – T10F yazılım güncellemesi",
-    "url": "https://www.yuzde100yerli.com/en/software-update-announced-for-togg-t10f-eyes-on-resolution-of-user-complaints/"
-   },
-   {
-    "name": "Şikayetvar – Togg arızalandı şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/arizalandi"
-   },
-   {
     "name": "Şikayetvar",
     "url": "https://www.sikayetvar.com/togg/kisa-menzil"
    }
-  ]
- },
- {
-  "id": "park-halinde-sarj-dusuyor",
-  "title": "Park halindeyken batarya azalıyor",
-  "category": "Menzil",
-  "models": [
-   "T10X",
-   "T10F"
   ],
-  "keywords": [
-   "park halinde",
-   "batarya azalıyor",
-   "sarj azaliyor",
-   "şarj düşüyor",
-   "vampir tüketim",
-   "bekleyince şarj",
-   "garaj",
-   "uzun süre park",
-   "batarya kaybı"
-  ],
-  "icon": "battery",
-  "steps": [
-   {
-    "text": "Park halinde az miktarda tüketim normaldir; araç 12V aküyü ve bağlantı sistemlerini beslemek için periyodik uyanır.",
-    "visual": "battery"
-   },
-   {
-    "text": "Haberdeki örnekte 3 ayda yaklaşık %18 kayıp ölçülmüş; benzer seviyeler olağandır.",
-    "visual": "check"
-   },
-   {
-    "text": "Uzun park öncesi bataryayı makul bir seviyede bırakın ve gereksiz uzaktan erişim/ön klimalandırma kullanımını azaltın.",
-    "visual": "app"
-   },
-   {
-    "text": "Günlük kayıp belirgin şekilde yüksekse sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Tamindir – Togg park halinde ne kadar elektrik harcıyor",
-    "url": "https://www.tamindir.com/haber/togg-park-halinde-ne-kadar-elektrik-harciyor_105557/"
-   }
-  ]
+  "solved": []
  },
  {
   "id": "menzil-dusuk-gorunuyor",
@@ -1490,28 +506,7 @@ window.TOGG_DATA = [
    "batarya"
   ],
   "icon": "map",
-  "steps": [
-   {
-    "text": "Gösterilen menzil son sürüş ortalama tüketimine göre hesaplanır; sürüş tarzı değiştikçe değişir.",
-    "visual": "map"
-   },
-   {
-    "text": "Yüksek hız, ani hızlanma ve yokuşlar tüketimi artırır; daha sakin sürüşle değeri izleyin.",
-    "visual": "car"
-   },
-   {
-    "text": "Lastik basınçlarını kontrol edin; düşük basınç tüketimi artırır.",
-    "visual": "tire"
-   },
-   {
-    "text": "Lastik seçimi de etkiler; yumuşak hamurlu lastikler menzili birkaç yüzde düşürebilir.",
-    "visual": "tire"
-   },
-   {
-    "text": "Tam şarjda bile menzil sürekli çok düşükse sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "community": [
    {
     "tip": "Forumda bir kullanıcı menzilin son ortalama tüketime göre hesaplandığını hatırlatmış; bir diğeri yumuşak lastiklerin menzili yaklaşık %3 düşürebileceğini yazmış.",
@@ -1521,70 +516,12 @@ window.TOGG_DATA = [
   ],
   "sources": [
    {
-    "name": "Şikayetvar – Togg kısa menzil şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/kisa-menzil"
-   },
-   {
-    "name": "Şikayetvar – Şarj, kilit ve kamera arızaları",
-    "url": "https://www.sikayetvar.com/togg/mesafe"
-   },
-   {
     "name": "DonanımHaber Forum",
     "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1323"
    }
   ],
-  "chronic": true
- },
- {
-  "id": "kisin-menzil-dusuyor",
-  "title": "Kışın menzil düşüyor",
-  "category": "Menzil",
-  "models": [
-   "T10X",
-   "T10F"
-  ],
-  "keywords": [
-   "kış",
-   "kis",
-   "soğuk",
-   "soguk",
-   "kışın menzil",
-   "ısıtma",
-   "ön ısıtma",
-   "klima zamanlayıcı",
-   "menzil kaybı",
-   "soğuk hava"
-  ],
-  "icon": "ac",
-  "steps": [
-   {
-    "text": "Soğukta batarya ve kabin ısıtması nedeniyle menzil düşüşü tüm elektrikli araçlarda normaldir.",
-    "visual": "battery"
-   },
-   {
-    "text": "Araç şarja takılıyken Trumore'daki klima zamanlayıcıyla kabini önceden ısıtın.",
-    "visual": "app"
-   },
-   {
-    "text": "Mümkünse koltuk ve direksiyon ısıtmasını tercih edip kabin sıcaklığını biraz düşük tutun.",
-    "visual": "seat"
-   },
-   {
-    "text": "Uzun yolda şarj duraklarını soğuk havaya göre daha sık planlayın.",
-    "visual": "map"
-   }
-  ],
-  "sources": [
-   {
-    "name": "DonanımHaber – Elektrikli otomobillerin kışın menzil sorunu",
-    "url": "https://www.donanimhaber.com/elektrikli-otomobillerin-kisin-menzil-sorunu--201449"
-   },
-   {
-    "name": "Togg T10X OTA 1.4 duyurusu",
-    "url": "https://togg.com.tr/en/t10x-ota-1-4"
-   }
-  ],
-  "chronic": true
+  "chronic": true,
+  "solved": []
  },
  {
   "id": "lastik-basinc-uyarisi",
@@ -1607,24 +544,7 @@ window.TOGG_DATA = [
    "lastik"
   ],
   "icon": "tire",
-  "steps": [
-   {
-    "text": "Güvenli yerde durup lastikleri gözle kontrol edin ve bir manometreyle basınçları ölçün.",
-    "visual": "tire"
-   },
-   {
-    "text": "Basınçları kapı çerçevesindeki etikette yazan değerlere getirin.",
-    "visual": "tire"
-   },
-   {
-    "text": "Tüm lastiklerde aynı anda 0 görünüyorsa bu sensör/iletişim arızası olabilir; birkaç km sürüp tekrar kontrol edin.",
-    "visual": "warning"
-   },
-   {
-    "text": "Uyarı sürerse sensör kontrolü için servis randevusu alın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "community": [
    {
     "tip": "Bir T10F sahibinde arızalı sol ön basınç sensörü için servis yalnızca yazılım uygulamış.",
@@ -1636,12 +556,9 @@ window.TOGG_DATA = [
    {
     "name": "Şikayetvar – T10F lastik şikayetleri",
     "url": "https://www.sikayetvar.com/togg/t10f/lastik"
-   },
-   {
-    "name": "Togg T10X OTA 1.4 duyurusu",
-    "url": "https://togg.com.tr/en/t10x-ota-1-4"
    }
-  ]
+  ],
+  "solved": []
  },
  {
   "id": "lastik-patladi",
@@ -1664,28 +581,7 @@ window.TOGG_DATA = [
    "jant"
   ],
   "icon": "tire",
-  "steps": [
-   {
-    "text": "Dörtlüleri yakın, güvenli bir yere çekin ve reflektörü yerleştirin.",
-    "visual": "warning"
-   },
-   {
-    "text": "Küçük delikler için araçtaki lastik tamir kitini kullanabilirsiniz; yan duvar yarıklarında kit işe yaramaz.",
-    "visual": "tire"
-   },
-   {
-    "text": "Yan duvar hasarında aracı sürmeyin, yol yardım hizmetini arayın.",
-    "visual": "phone"
-   },
-   {
-    "text": "Lastiği değiştirirken orijinal ebat ve yük endeksine uygun lastik taktırın.",
-    "visual": "check"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "warning": "Yan duvarı yarılmış lastikle yola devam etmek tehlikelidir.",
   "community": [
    {
@@ -1699,7 +595,8 @@ window.TOGG_DATA = [
     "name": "Şikayetvar – T10F lastik şikayetleri",
     "url": "https://www.sikayetvar.com/togg/t10f/lastik"
    }
-  ]
+  ],
+  "solved": []
  },
  {
   "id": "direksiyon-titriyor",
@@ -1722,28 +619,7 @@ window.TOGG_DATA = [
    "vibrasyon"
   ],
   "icon": "tire",
-  "steps": [
-   {
-    "text": "Lastik basınçlarını ve lastiklerde şişme/hasar olup olmadığını kontrol edin.",
-    "visual": "tire"
-   },
-   {
-    "text": "Balans ve rot ayarı yaptırın.",
-    "visual": "service"
-   },
-   {
-    "text": "Titreme frenlemede artıyorsa fren disklerini kontrol ettirin.",
-    "visual": "check"
-   },
-   {
-    "text": "Uzun inişlerde yalnızca frene yüklenmek yerine rejeneratif frenlemeyi kullanın.",
-    "visual": "car"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "community": [
    {
     "tip": "Birkaç T10F sahibi 110–120 km/s üzerinde titreme bildirmiş; balans tek başına çözmemiş.",
@@ -1767,14 +643,6 @@ window.TOGG_DATA = [
     "url": "https://www.sikayetvar.com/togg/t10f/lastik"
    },
    {
-    "name": "Şikayetvar – Togg arızalandı şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/arizalandi"
-   },
-   {
-    "name": "Şikayetvar – Togg kısa menzil şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/kisa-menzil"
-   },
-   {
     "name": "DonanımHaber Forum",
     "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1323"
    },
@@ -1782,7 +650,8 @@ window.TOGG_DATA = [
     "name": "Donanım Arşivi Forum",
     "url": "https://forum.donanimarsivi.com/posts/11452333/"
    }
-  ]
+  ],
+  "solved": []
  },
  {
   "id": "sos-uyari-isigi",
@@ -1805,28 +674,7 @@ window.TOGG_DATA = [
    "uyarı ışığı"
   ],
   "icon": "warning",
-  "steps": [
-   {
-    "text": "Uyarı acil çağrı (e-Call) sisteminin çalışmadığını gösterebilir; sorunu ciddiye alın.",
-    "visual": "warning"
-   },
-   {
-    "text": "Aracı kapatıp kilitleyin, bir süre bekleyip yeniden başlatın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Uyarının internet bağlantısı kaybıyla birlikte görülüp görülmediğini not edin.",
-    "visual": "settings"
-   },
-   {
-    "text": "Tarih ve saatleri kaydedip servise iletin; kalıcı çözüm çoğu zaman servis gerektiriyor.",
-    "visual": "service"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "community": [
    {
     "tip": "İki kullanıcı resetin uyarıyı söndürdüğünü, bir diğeri kilitleyip beklemenin işe yaradığını ama iki gün sonra geri geldiğini yazmış.",
@@ -1843,16 +691,9 @@ window.TOGG_DATA = [
    {
     "name": "Şikayetvar – Togg SOS şikayetleri",
     "url": "https://www.sikayetvar.com/togg/sos"
-   },
-   {
-    "name": "Şikayetvar (EN) – T10F güvenlik sistemi/SOS sorunu",
-    "url": "https://www.sikayetvar.com/en/togg-us/togg-has-not-fixed-my-t10f-safety-system-problem-for-over-a-month"
-   },
-   {
-    "name": "Şikayetvar – SOS hatası ve klima çalışmıyor",
-    "url": "https://www.sikayetvar.com/togg/togg-aracta-surekli-sos-hatasi-ve-klima-calismiyor-servis-destegi-yok"
    }
-  ]
+  ],
+  "solved": []
  },
  {
   "id": "klima-calismiyor",
@@ -1877,24 +718,9 @@ window.TOGG_DATA = [
   "icon": "ac",
   "steps": [
    {
-    "text": "Klimayı ekrandan kapatıp yeniden açın ve otomatik moda alın.",
-    "visual": "ac"
-   },
-   {
-    "text": "Camlar buğulanıyorsa önce ön cam buğu çözmeyi açın ve güvenli yerde durun.",
-    "visual": "warning"
-   },
-   {
-    "text": "Aracı kapatıp kilitleyin, bir süre bekleyip yeniden başlatın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Klima arızası SOS/bağlantı uyarısıyla birlikte geliyorsa bunu servise mutlaka belirtin.",
-    "visual": "warning"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
+    "text": "Klima ile birlikte SOS, park sensörü ve lastik basıncı uyarıları vardı; servis BDCC (gövde kontrol) modülünü değiştirdi ve kullanıcı sorunun kalmadığını yazdı.",
+    "url": "https://www.sikayetvar.com/togg/togg-t10xde-klima-calismiyor-ve-servis-parca-gecikmesi",
+    "visual": "check"
    }
   ],
   "warning": "Buğulanma görüşü engelliyorsa sürüşe devam etmeyin.",
@@ -1916,15 +742,18 @@ window.TOGG_DATA = [
     "url": "https://www.sikayetvar.com/togg/togg-aracta-surekli-sos-hatasi-ve-klima-calismiyor-servis-destegi-yok"
    },
    {
-    "name": "Şikayetvar – Togg SOS şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/sos"
-   },
-   {
     "name": "DonanımHaber Forum",
     "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1324"
    }
   ],
-  "chronic": true
+  "chronic": true,
+  "solved": [
+   {
+    "tip": "Klima ile birlikte SOS, park sensörü ve lastik basıncı uyarıları vardı; servis BDCC (gövde kontrol) modülünü değiştirdi ve kullanıcı sorunun kalmadığını yazdı.",
+    "source": "Şikayetvar (kullanıcı çözüldü dedi)",
+    "url": "https://www.sikayetvar.com/togg/togg-t10xde-klima-calismiyor-ve-servis-parca-gecikmesi"
+   }
+  ]
  },
  {
   "id": "enerji-sistem-hatasi",
@@ -1949,35 +778,28 @@ window.TOGG_DATA = [
   "icon": "warning",
   "steps": [
    {
-    "text": "Dörtlüleri yakıp aracı güvenli bir yere çekin.",
-    "visual": "warning"
+    "text": "Batarya ve ardından termal sistem arızası nedeniyle araç 15 gün serviste kaldı; onarım sonrası kullanıcı aracı sorunsuz kullandığını yazdı.",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-batarya-arizasi-ve-belirsiz-servis-sureci",
+    "visual": "check"
    },
    {
-    "text": "Ekrandaki uyarı mesajının fotoğrafını çekin.",
-    "visual": "screen"
-   },
-   {
-    "text": "Aracı kapatıp bir süre bekledikten sonra yeniden çalıştırmayı deneyin.",
-    "visual": "reset"
-   },
-   {
-    "text": "Araç çalışmazsa yol yardım/çekici talep edin; uzaktan müdahale yapılabiliyor.",
-    "visual": "phone"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
+    "text": "Enerji sistemi arızasıyla duran araç için Togg batarya değişimine karar verdi ve ertesi günden ikame araç sağladı; kullanıcı teşekkür etti.",
+    "url": "https://www.sikayetvar.com/togg/enerji-sistemi-arizasiyla-arac-aniden-durdu-aileyi-tehlikeye-atti-ve-ikame-arac-saglanmadi",
+    "visual": "check"
    }
   ],
   "warning": "Yüksek voltaj uyarısı varsa araca müdahale etmeyin ve araçtan uzaklaşın.",
-  "sources": [
+  "sources": [],
+  "solved": [
    {
-    "name": "Şikayetvar – Togg arızalandı şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/arizalandi"
+    "tip": "Batarya ve ardından termal sistem arızası nedeniyle araç 15 gün serviste kaldı; onarım sonrası kullanıcı aracı sorunsuz kullandığını yazdı.",
+    "source": "Şikayetvar (kullanıcı çözüldü dedi)",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-batarya-arizasi-ve-belirsiz-servis-sureci"
    },
    {
-    "name": "Şikayetvar – T10X şarj problemi",
-    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracimda-yasadigim-sarj-problemi-ve-ikame-arac-magduriyeti"
+    "tip": "Enerji sistemi arızasıyla duran araç için Togg batarya değişimine karar verdi ve ertesi günden ikame araç sağladı; kullanıcı teşekkür etti.",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/enerji-sistemi-arizasiyla-arac-aniden-durdu-aileyi-tehlikeye-atti-ve-ikame-arac-saglanmadi"
    }
   ]
  },
@@ -2004,42 +826,21 @@ window.TOGG_DATA = [
   "icon": "car",
   "steps": [
    {
-    "text": "Kameraları ve sensörleri (ön cam, tamponlar) kir, kar ve buzdan temizleyin.",
-    "visual": "car"
-   },
-   {
-    "text": "T10X V1'de bazı ADAS özellikleri 1.5 güncellemesiyle servis ziyaretinde yüklendi; aracınıza yüklenip yüklenmediğini kontrol edin.",
-    "visual": "service"
-   },
-   {
-    "text": "Ocak 2025 sonrası bazı özellikler (Trafik Pilotu vb.) için Trumore üzerinden ek ücretli etkinleştirme gerekiyor.",
-    "visual": "app"
-   },
-   {
-    "text": "Hata uyarısı sürerse aracı yeniden başlatın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
+    "text": "İkinci el T10X'te menüde görünmeyen ADAS özellikleri Togg tarafından uzaktan aktifleştirildi (sol kamera ayrıca servise bırakıldı).",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracta-adas-aktiflestirilemedi-trumore-akilli-cihaz-eklenemedi-ve-sol-kamera-calismiyor",
+    "visual": "check"
    }
   ],
   "warning": "Sürüş destek sistemleri sürücüyü ikame etmez; direksiyonu kandırmaya yönelik aparatlar kullanmayın.",
-  "sources": [
+  "sources": [],
+  "chronic": true,
+  "solved": [
    {
-    "name": "Togg T10X OTA 1.5 / ADAS duyurusu",
-    "url": "https://togg.com.tr/en/t10x-ota-1-5"
-   },
-   {
-    "name": "Şikayetvar – Togg SOS şikayetleri",
-    "url": "https://www.sikayetvar.com/togg/sos"
-   },
-   {
-    "name": "Webtekno – Togg kullanıyorsanız dikkat etmeniz gerekenler",
-    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html"
+    "tip": "İkinci el T10X'te menüde görünmeyen ADAS özellikleri Togg tarafından uzaktan aktifleştirildi (sol kamera ayrıca servise bırakıldı).",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/togg-t10x-aracta-adas-aktiflestirilemedi-trumore-akilli-cihaz-eklenemedi-ve-sol-kamera-calismiyor"
    }
-  ],
-  "chronic": true
+  ]
  },
  {
   "id": "kapi-kilit",
@@ -2064,20 +865,9 @@ window.TOGG_DATA = [
   "icon": "door",
   "steps": [
    {
-    "text": "Yeni yazılımlarda araçtan uzaklaştığınızda otomatik kilitleme devreye girer; bu tasarım gereğidir.",
-    "visual": "door"
-   },
-   {
-    "text": "Kapı kolu geç açılıyorsa anahtarı/telefonu araca yaklaştırıp tekrar deneyin.",
-    "visual": "key"
-   },
-   {
-    "text": "Araç yazılımının güncel olduğunu kontrol edin; elektronik kilit gecikmeleri güncellemelerle iyileştirildi.",
-    "visual": "reset"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
+    "text": "Anahtar kapıları kilitleyip açmıyordu; Konya Togg servisi sorunu çözdü ve kullanıcı teşekkür notu bıraktı (yapılan işlem sayfada yazmıyor).",
+    "url": "https://www.sikayetvar.com/togg/togg-anahtar-arizasi-ve-teslimat-gecikmesiyle-yasanan-magduriyet",
+    "visual": "check"
    }
   ],
   "community": [
@@ -2089,19 +879,18 @@ window.TOGG_DATA = [
   ],
   "sources": [
    {
-    "name": "DonanımHaber – T10X donanım ve yazılım güncellemesi (2.0)",
-    "url": "https://www.donanimhaber.com/togg-t10x-lerde-onemli-donanim-ve-yazilim-guncellemesi--204108"
-   },
-   {
-    "name": "Webtekno – Togg kullanıyorsanız dikkat etmeniz gerekenler",
-    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html"
-   },
-   {
     "name": "Şikayetvar – Şarj, kilit ve kamera arızaları",
     "url": "https://www.sikayetvar.com/togg/mesafe"
    }
   ],
-  "chronic": true
+  "chronic": true,
+  "solved": [
+   {
+    "tip": "Anahtar kapıları kilitleyip açmıyordu; Konya Togg servisi sorunu çözdü ve kullanıcı teşekkür notu bıraktı (yapılan işlem sayfada yazmıyor).",
+    "source": "Şikayetvar (çözüldü)",
+    "url": "https://www.sikayetvar.com/togg/togg-anahtar-arizasi-ve-teslimat-gecikmesiyle-yasanan-magduriyet"
+   }
+  ]
  },
  {
   "id": "uyari-isigi-sonmuyor",
@@ -2124,28 +913,7 @@ window.TOGG_DATA = [
    "lamba yanıyor"
   ],
   "icon": "light",
-  "steps": [
-   {
-    "text": "Kullanım kılavuzundaki uyarı simgeleri bölümünden ışığın anlamını kontrol edin.",
-    "visual": "check"
-   },
-   {
-    "text": "Kırmızı bir uyarıysa güvenli yerde durun; sarı ise dikkatle sürüşe devam edip kayıt alın.",
-    "visual": "warning"
-   },
-   {
-    "text": "Aracı kapatıp yeniden açın.",
-    "visual": "reset"
-   },
-   {
-    "text": "Işık geri gelirse veya güvenlik sistemiyle (airbag, fren) ilgiliyse servis randevusu alın.",
-    "visual": "service"
-   },
-   {
-    "text": "Sorun sürerse Trumore uygulamasındaki Togg Care bölümünden talep açın ya da 0850 222 86 44 / toggcare@togg.com.tr üzerinden Togg Care'e ulaşın.",
-    "visual": "service"
-   }
-  ],
+  "steps": [],
   "warning": "Airbag veya fren uyarısı sürekli yanıyorsa sistem kaza anında çalışmayabilir.",
   "community": [
    {
@@ -2176,6 +944,59 @@ window.TOGG_DATA = [
    {
     "name": "DonanımHaber Forum",
     "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1325"
+   }
+  ],
+  "solved": []
+ },
+ {
+  "id": "navigasyon-konum-hatasi",
+  "title": "GEZ navigasyon yanlış konuma gidiyor / ekran kapanıyor",
+  "category": "Multimedya",
+  "models": [
+   "T10X",
+   "T10F"
+  ],
+  "keywords": [
+   "gez",
+   "navigasyon",
+   "yanlış konum",
+   "whatsapp konum",
+   "harita",
+   "uydu görüntüsü",
+   "ekran kapanıyor",
+   "rota",
+   "pin paylaş",
+   "adres bulunamıyor"
+  ],
+  "icon": "map",
+  "steps": [
+   {
+    "text": "WhatsApp'tan paylaşılan konum GEZ'de yanlış yere gidiyordu; kullanıcı konumu GPS noktası olarak (haritada uzun basıp pin paylaşarak ya da rotayı harita uygulamasında oluşturup Trumore ile göndererek) paylaşınca sorunu kendisi çözdü.",
+    "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1328",
+    "visual": "check"
+   },
+   {
+    "text": "GEZ ekranı sürekli kapanıyordu; kullanıcı uydu görüntüsünü kapatınca ekranın bir kez bile kapanmadığını yazdı.",
+    "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1328",
+    "visual": "check"
+   }
+  ],
+  "sources": [
+   {
+    "name": "DonanımHaber Togg ana konu",
+    "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1328"
+   }
+  ],
+  "solved": [
+   {
+    "tip": "WhatsApp'tan paylaşılan konum GEZ'de yanlış yere gidiyordu; kullanıcı konumu GPS noktası olarak (haritada uzun basıp pin paylaşarak ya da rotayı harita uygulamasında oluşturup Trumore ile göndererek) paylaşınca sorunu kendisi çözdü.",
+    "source": "DonanımHaber forum",
+    "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1328"
+   },
+   {
+    "tip": "GEZ ekranı sürekli kapanıyordu; kullanıcı uydu görüntüsünü kapatınca ekranın bir kez bile kapanmadığını yazdı.",
+    "source": "DonanımHaber forum",
+    "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1328"
    }
   ]
  }

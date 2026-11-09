@@ -12,7 +12,8 @@ def page(d):
     models = ' ve '.join(d.get('models', []))
     title = f"Togg {models}: {d['title']} – Çözüm Adımları | EVTR"
     desc = f"Togg {models} '{d['title'].lower()}' sorunu için adım adım çözüm: " + ' '.join(s['text'] for s in d['steps'])[:120] + '…'
-    steps = ''.join(f"<li>{e(s['text'])}</li>" for s in d['steps'])
+    steps = ''.join(f"<li>{e(s['text'])} <a href=\"{e(s.get('url',''))}\" rel=\"nofollow noopener\" target=\"_blank\">kaynak</a></li>" for s in d['steps'])
+    solved = ''.join(f"<li>{e(c['tip'])} <a href=\"{e(c['url'])}\" rel=\"nofollow noopener\" target=\"_blank\">{e(c['source'])}</a></li>" for c in d.get('solved', []))
     comm = ''.join(f"<li>{e(c['tip'])} <a href=\"{e(c.get('url',''))}\" rel=\"nofollow noopener\" target=\"_blank\">{e(c.get('source','kaynak'))}</a></li>" for c in d.get('community', []))
     src = ' · '.join(f"<a href=\"{e(s['url'])}\" rel=\"nofollow noopener\" target=\"_blank\">{e(s['name'])}</a>" for s in d.get('sources', []))
     ld = {"@context": "https://schema.org", "@type": "HowTo", "name": d['title'], "inLanguage": "tr",
@@ -26,7 +27,8 @@ def page(d):
 <body><header class="top"><a class="brand" href="../index.html"><span class="dot"></span>EVTR</a></header>
 <main><article class="card open static">
 <div class="card-h"><span><h1>{e(d['title'])}</h1><span class="tags"><span class="tag">{e(d.get('category',''))}</span><span class="tag">Togg {e(models)}</span></span></span></div>
-<div class="card-b"><ol class="steps plain">{steps}</ol>
+<div class="card-b">{f'<ol class="steps plain">{steps}</ol>' if steps else ''}
+{f'<div class="solved"><h3>✓ Kullanıcılarda işe yarayan çözümler</h3><ul>{solved}</ul></div>' if solved else ''}
 {f'<div class="warn">⚠︎ {e(d["warning"])}</div>' if d.get('warning') else ''}
 {f'<div class="comm"><h3>Topluluk çözümleri</h3><ul>{comm}</ul></div>' if comm else ''}
 <div class="src">Bu çözüm internetteki herkese açık kaynaklardan derlenmiştir; resmi Togg talimatı değildir.<br>Kaynaklar: {src}</div>
