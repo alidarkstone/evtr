@@ -112,6 +112,11 @@ window.TOGG_DATA = [
     "text": "Tekrarlayan şarj alamama, akü boşalması ve kendiliğinden kapanan ekran sorunları üç servis ziyaretinde çözülemeyince Togg araç değişimi yaptı; kullanıcı destek için teşekkür etti.",
     "url": "https://www.sikayetvar.com/togg/togg-t10x-aracimda-surekli-sarj-ve-aku-sorunlari-guven-kaybina-yol-acti",
     "visual": "check"
+   },
+   {
+    "text": "Şarj soketini temiz ve kuru tutun; özellikle yağmur veya çamurdan sonra bağlantı kalitesi etkilenebilir.",
+    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html",
+    "visual": "check"
    }
   ],
   "warning": "Hasarlı kablo, ıslak soket veya yanık kokusu varsa şarj etmeyin.",
@@ -167,7 +172,13 @@ window.TOGG_DATA = [
    "reset"
   ],
   "icon": "screen",
-  "steps": [],
+  "steps": [
+   {
+    "text": "OTA yazılım güncellemelerini gecikmeden yükleyin; makaleye göre multimedya donması ve kamera gecikmesi güncellemelerle iyileşti.",
+    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html",
+    "visual": "check"
+   }
+  ],
   "warning": "Gösterge ekranı kapalıyken hız ve uyarıları göremezsiniz; aracı güvenli yerde durdurun.",
   "community": [
    {
@@ -241,6 +252,11 @@ window.TOGG_DATA = [
     "tip": "Araç aylarca 1.5 sürümünde kaldı, DTC sıfırlama ve yeniden başlatma işe yaramadı; Togg Care ekibi kullanıcıyla iletişime geçip güncelleme sorununu çözdü.",
     "source": "Şikayetvar (çözüldü)",
     "url": "https://www.sikayetvar.com/togg/togg-t10x-v2-yazilim-guncellemesi-basarisiz-arac-15-surumunde-kaldi"
+   },
+   {
+    "tip": "Togg Care destek hattı üzerinden başvurulmuş ve ekip sorunu çözmüş (yapılan işlem belirtilmemiş).",
+    "source": "Şikayetvar – Togg sıfırlama şikayetleri",
+    "url": "https://www.sikayetvar.com/togg/sifirlama"
    }
   ]
  },
@@ -444,6 +460,11 @@ window.TOGG_DATA = [
     "tip": "Araç verileri Trumore'da güncellenmiyordu; şikayet 'Çözüldü' işaretlendi ve kullanıcı teşekkür etti (çözüm yöntemi yazılmamış).",
     "source": "Şikayetvar (çözüldü)",
     "url": "https://www.sikayetvar.com/togg/togg-t10x-verileri-guncellenmiyor-trumore-erisim-sorunu-ve-cozum-bekleyisi"
+   },
+   {
+    "tip": "Ayrı bir güncelleme yapılmadan, mobil cihaz üzerinden işlem tamamlanmış.",
+    "source": "Şikayetvar – Togg sıfırlama şikayetleri",
+    "url": "https://www.sikayetvar.com/togg/sifirlama"
    }
   ]
  },
@@ -468,7 +489,13 @@ window.TOGG_DATA = [
    "takviye"
   ],
   "icon": "battery",
-  "steps": [],
+  "steps": [
+   {
+    "text": "Araç uzun süre kullanılmadığında elektronik uyarılar çıkabilir; servisten 12V aküyü de kontrol ettirin.",
+    "url": "https://www.webtekno.com/togg-kullaniyorsaniz-bilmeniz-dikkat-etmeniz-gerekenler-h221443.html",
+    "visual": "check"
+   }
+  ],
   "warning": "Elektrikli araçta yüksek voltaj sistemi bulunur; akü bağlantılarına yalnızca yetkili kişiler müdahale etmeli.",
   "community": [
    {
@@ -946,7 +973,13 @@ window.TOGG_DATA = [
     "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1325"
    }
   ],
-  "solved": []
+  "solved": [
+   {
+    "tip": "Aracı kapatıp yeniden açmak lambanın açık kalmasını düzeltmiş.",
+    "source": "DonanımArşivi Forum – Togg T10x Alınabilecek Bir Araç mı?",
+    "url": "https://forum.donanimarsivi.com/posts/11452333/"
+   }
+  ]
  },
  {
   "id": "navigasyon-konum-hatasi",
@@ -997,6 +1030,49 @@ window.TOGG_DATA = [
     "tip": "GEZ ekranı sürekli kapanıyordu; kullanıcı uydu görüntüsünü kapatınca ekranın bir kez bile kapanmadığını yazdı.",
     "source": "DonanımHaber forum",
     "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1328"
+   }
+  ]
+ },
+ {
+  "id": "dijital-anahtar-kurulum",
+  "title": "Dijital anahtar kurulumu",
+  "category": "Dijital Anahtar",
+  "models": [
+   "T10X"
+  ],
+  "icon": "key",
+  "keywords": [
+   "dijital anahtar",
+   "dijital anahtar kurulum",
+   "telefon anahtar",
+   "anahtar eşleştirme",
+   "anahtar eslestirme",
+   "trumore anahtar",
+   "telefonla açma",
+   "telefonla acma"
+  ],
+  "steps": [
+   {
+    "text": "Araca fiziksel anahtarla binin; ekranda Ayarlar > Bağlantılar > Erişim Cihazlarım > Erişim Cihazı yolunu izleyin.",
+    "url": "https://www.donanimhaber.com/togg-a-dijital-anahtar-ozelligi-geldi-nasil-kullanilir--189409",
+    "visual": "key"
+   },
+   {
+    "text": "Trumore > Akıllı Cihazım > Yeni Anahtar Oluştur > Bağlan; çıkan PIN'i kopyalayıp telefonun Bluetooth menüsünden T10X ile eşleşirken girin.",
+    "url": "https://www.donanimhaber.com/togg-a-dijital-anahtar-ozelligi-geldi-nasil-kullanilir--189409",
+    "visual": "key"
+   },
+   {
+    "text": "Bağlantı Bluetooth ile kurulur, internet gerekmez; kilit/bagaj için telefon araca en fazla 3 metre yakın olmalı ve Trumore güncel olmalı.",
+    "url": "https://www.donanimhaber.com/togg-a-dijital-anahtar-ozelligi-geldi-nasil-kullanilir--189409",
+    "visual": "key"
+   }
+  ],
+  "solved": [],
+  "sources": [
+   {
+    "name": "DonanımHaber – Togg'a dijital anahtar özelliği geldi",
+    "url": "https://www.donanimhaber.com/togg-a-dijital-anahtar-ozelligi-geldi-nasil-kullanilir--189409"
    }
   ]
  }
